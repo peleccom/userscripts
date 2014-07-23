@@ -1,16 +1,23 @@
 // ==UserScript==
 // @name       Vseti.by downloader
 // @namespace  http://peleccom.appspot.com/vseti
-// @version    0.1
+// @version    0.1.1
 // @description  This script help to download video from vseti.by
+// @updateURL https://raw.githubusercontent.com/peleccom/userscripts/master/vseti_by_downloader.user.js
 // @match      http://vseti.by/*
 // @copyright  2012+, Peleccom
 // ==/UserScript==
 
 (function (window, undefined) {
+    var w;
+    if (typeof unsafeWindow != undefined) {
+        w = unsafeWindow
+    } else {
+        w = window;
+    }
+    var $ = w.$;
     var TIMEOUT = 5000;
     var marker_class = "direct_link_extracted";
-
     var divider_el = $('<span class="divider">|</span>');
     var download_el = $('<a class="mv_hide_info" style="color: rgb(255, 255, 255);">Скачать</a>');
     
@@ -46,4 +53,3 @@
 
 run();
 })(window);
-
