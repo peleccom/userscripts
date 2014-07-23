@@ -1,11 +1,12 @@
 // ==UserScript==
 // @name       Vseti.by downloader
-// @namespace  http://peleccom.appspot.com/vseti
-// @version    0.1.2
+// @namespace  http://peleccom.appspot.com/userscripts/vseti.by
+// @version    0.1.3
 // @description  This script help to download video from vseti.by
 // @updateURL https://raw.githubusercontent.com/peleccom/userscripts/master/vseti_by_downloader.user.js
 // @match      http://vseti.by/*
 // @copyright  2012+, Peleccom
+// @author Peleccom
 // ==/UserScript==
 
 (function (window, undefined) {
