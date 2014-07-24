@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name       Vseti.by downloader
 // @namespace  http://peleccom.appspot.com/userscripts/vseti.by
-// @version    0.1.3
+// @version    0.1.4
 // @description  This script help to download video from vseti.by
 // @updateURL https://raw.githubusercontent.com/peleccom/userscripts/master/vseti_by_downloader.user.js
 // @match      http://vseti.by/*
@@ -20,7 +20,7 @@
     var TIMEOUT = 5000;
     var marker_class = "direct_link_extracted";
     var divider_el = $('<span class="divider">|</span>');
-    var download_el = $('<a class="mv_hide_info" style="color: rgb(255, 255, 255);">Скачать</a>');
+    var download_el = $('<a>Скачать</a>');
     
     var img = '<div style="background-color: black;color:white; width: 22px; height: 22px;"></div>';
 
